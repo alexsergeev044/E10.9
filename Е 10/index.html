@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style-timeline.css" rel="stylesheet" type="text/css">
+    <link href="style-collapsible.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="profile grid-wrapper">
+            <div class="grid-item">
+                <span class="circle-image">
+                </span>
+            </div>
+            <div class="grid-item">
+                <h1>Сергеев</h1><h2>Алексей Константинович</h2>
+            </div>
+            <div class="grid-item">
+                <ul class="list-titles">
+                    <li>тел.:</li>
+                    <li>e-mail:</li>
+                    <li>git:</li>
+                    <li>адрес</li>
+                </ul>
+            </div>
+            <div class="grid-item">
+              <ul class="list-content grid-item">
+                  <li>+7 978 742 0315</li>
+                  <li>alexsergeev044@gmail.com</li>
+                  <li><a href="https://https://github.com/alexsergeev044/E10.9.git">E10.9</a></li>
+                  <li>г.Севастополь</li>
+              </ul>
+            </div>
+        </div>
+        <div class="exp">
+            <div class="section-wrapper">
+                <h3 class="section-title">Ключевые навыки</h3>
+                  <ul>
+                      <li class="skill-percentage">HTML / CSS</li>
+                      <li class="skill-percentage">Javascript</li>
+                      <li class="skill-percentage">Python</li>
+                  
+                  </ul>
+              
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <h3>2022 - по настоящее время</h3>
+                    <button type="button" class="collapsible">1С-Рарус в Крыму и Севастополе, ООО</button>
+                    <div class="folded">
+                        Севастополь, <a href="https://rarus-crimea.ru/">rarus-crimea.ru</a>
+                        <ul>
+                            <li>
+                                Разработка программного обеспечения
+                            </li>
+                            <li>
+                                Системная интеграция, автоматизации технологических и бизнес-процессов предприятия, ИТ-консалтинг 
+                            </li>
+                            <li>
+                                Электронно-вычислительная, оптическая, контрольно-измерительная техника, радиоэлектроника, автоматика (монтаж, сервис, ремонт, продвижение, оптовая торговля)
+                            </li>
+                            <li>
+                                Телекоммуникации, связь
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <p>
+                            <strong>архитектор баз данных в управлении разработки и внедрения программного обеспечения</strong>
+                        </p>
+                        <p>
+                            Разработка структуры баз, хранимых процедур, интеграция учетных систем, администрирование , разработка web-интерфейсов (ASP.net VB.net JS), разработка и поддержка ПО предприятий-клиентов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>2015 - 2022</h3>
+                    <div class="folded">
+                        <button type="button" class="collapsible"> РНКБ Банк ПАО</button>
+                    <div class="folded">
+                        Севастополь, <a href='https://rncb.ru/'>rncb.ru</a>
+                    </div>
+                    <div class="about">
+                        <p>
+                            <strong>администратор программных средств</strong>
+                        </p>
+                        <p>
+                            Разработка структуры баз, хранимых процедур, администрирование, разработка клиентского ПО (Delphi, Access) и web-интерфейсов (ASP+JS, DHTML).
+                        </p>
+                        <p>
+                            Формирование базы данных и построителя отчетов на основе стандартизированной электронной отчетности 
+                            Разработка механизма создания и пополнения агрегированных хранилищ данных для построения сводной отчетности о финансовой деятельности предприятий 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h3>2005 - 2015</h3>
+                    <button type="button" class="collapsible">Лекс-Сервис, ЗАО</button>
+                    <div class="folded">
+                        Севастополь
+                        Аудиторская фирма
+                        Оказание аудиторски услуг широого спектора
+                    </div>
+                    <div class="about">
+                        <p>
+                            <strong>инженер-программист</strong>
+                        </p>
+                        <p>
+                            Разработка АРМов для автоматизации деятельности сотрудников бухгалтерии, экономического и расчетного отделов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const btns = document.querySelectorAll('.collapsible');
+        btns.forEach(function(item) {
+            item.addEventListener('click', (event) => {
+                event.srcElement.nextElementSibling.classList.toggle('unfolded');
+            })
+        });
+    </script>
+</body>
+</html>
